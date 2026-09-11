@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SubShield — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #0f172a;
+      --border: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --emerald: #34d399;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(52, 211, 153, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      color: var(--emerald);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 6px 0;
+      color: #fff;
+    }
+    h2 {
+      font-size: 17px;
+      margin-top: 28px;
+      color: var(--accent);
+      border-left: 3px solid var(--accent);
+      padding-left: 8px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    strong {
+      color: #fff;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .callout {
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 12px;
+      padding: 16px;
+      margin: 20px 0;
+      font-size: 13px;
+      color: #bae6fd;
+    }
+    .footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <span class="badge">100% Offline &amp; Private</span>
+        <h1>SubShield Privacy Policy</h1>
+        <p style="margin:0;font-size:12px;color:#64748b;">Effective Date: September 10, 2026 &bull; Apple App Store &amp; Worldwide</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Core Privacy Guarantee:</strong> SubShield is engineered on a strict <strong>Zero-Knowledge &amp; Local-First Architecture</strong>. Your subscription entries, renewal dates, bank statement extracts, and financial records never leave your physical device. We have no backend database of your personal expenses and zero access to your finances.
+    </div>
+
+    <h2>1. Information We Do NOT Collect</h2>
+    <p>Unlike conventional subscription monitoring services, SubShield is intentionally built without invasive tracking:</p>
+    <ul>
+      <li><strong>No Banking Credentials or Plaid Logins:</strong> SubShield never asks for, connects to, or stores online banking logins, routing numbers, account numbers, or debit/credit card CVVs.</li>
+      <li><strong>No Cloud Syncing of Personal Records:</strong> All subscription details, renewal timelines, notes, and custom contract IDs are saved exclusively in your device's sandboxed local storage (IndexedDB / Native Keychain).</li>
+      <li><strong>No Third-Party Advertising Trackers:</strong> We do not integrate tracking SDKs (such as Facebook Pixel, Google AdSense, or data brokers).</li>
+      <li><strong>No Financial Telemetry Selling:</strong> We never sell, license, rent, or trade your anonymized or identifiable financial habits.</li>
+    </ul>
+
+    <h2>2. Data Stored Locally on Your Device</h2>
+    <p>The following information is created by you and kept securely inside your device's isolated application storage:</p>
+    <ul>
+      <li>Subscription details: Service name, billing interval, amount, original price, and renewal dates.</li>
+      <li>Local notification preferences: Reminder schedules (e.g. 24h/48h before auto-renewal).</li>
+      <li>Statement Scan Text / CSV: Processed 100% in-memory on your device using client-side pattern matching. Once processed, temporary statement text is discarded immediately.</li>
+      <li>User Account Profile: Email and hashed authentication token used for in-app tier verification.</li>
+    </ul>
+
+    <h2>3. In-App Purchases &amp; Subscriptions</h2>
+    <p>If you choose to purchase <strong>SubShield Elite</strong> ($5.99/month or $59.99/year), the transaction is processed directly and securely through <strong>Apple In-App Purchases (StoreKit)</strong>. Apple handles your payment details in accordance with Apple's Privacy Policy. SubShield receives only an anonymous cryptographic receipt verifying your active subscription status.</p>
+
+    <h2>4. Push Notifications</h2>
+    <p>SubShield utilizes local operating system alarms and the Web Notifications API. These alerts are scheduled and triggered directly by your operating system on your device without communicating with external push servers.</p>
+
+    <h2>5. Data Retention, Portability &amp; Complete Deletion</h2>
+    <p>You maintain full sovereignty over your data at all times:</p>
+    <ul>
+      <li><strong>Export:</strong> You can export a full JSON archive of your subscriptions at any time via the Backup menu.</li>
+      <li><strong>Delete Account &amp; Wipe Vault:</strong> You can permanently wipe all stored subscriptions and account data at any time directly in the Account settings, complying with Apple App Store Guideline 5.1.1(v).</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>SubShield does not knowingly collect or solicit personal information from children under the age of 13. The app is rated for ages 4+ and contains no mature content or tracking.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions or security inquiries regarding this Privacy Policy, contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@subshield.app" style="color:var(--accent);">support@subshield.app</a></p>
+
+    <div class="footer">
+      &copy; 2026 SubShield. All rights reserved. Registered on Apple App Store Connect.
+    </div>
+  </div>
+</body>
+</html>
